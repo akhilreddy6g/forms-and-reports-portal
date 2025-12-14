@@ -1,0 +1,376 @@
+{
+    "schemaVersion": "1.0",
+    "forms": [
+      {
+        "id": "workplace_safety_inspection_basic",
+        "title": "Workplace Safety Inspection Checklist",
+        "source": {
+          "name": "Stanford EHS",
+          "type": "PDF",
+          "evidence": "Workplace Safety Inspection Checklist (tri-state Yes/No/N/A with comments/date corrected)"
+        },
+        "tags": ["inspection", "safety"],
+        "complexityLevel": 1,
+        "sections": [
+          {
+            "id": "meta",
+            "title": "Inspection Details",
+            "fields": [
+              { "id": "completedBy", "label": "Completed by", "type": "text", "required": true },
+              { "id": "date", "label": "Date", "type": "date", "required": true },
+              { "id": "building", "label": "Building", "type": "text", "required": true },
+              { "id": "room", "label": "Room", "type": "text", "required": false },
+              { "id": "supervisor", "label": "Supervisor", "type": "text", "required": false },
+              { "id": "phone", "label": "Phone", "type": "tel", "required": false },
+              { "id": "department", "label": "Department", "type": "text", "required": false }
+            ]
+          },
+          {
+            "id": "general_safety",
+            "title": "General Safety",
+            "fields": [
+              {
+                "id": "gs_workplace_clean_orderly",
+                "label": "Workplace is clean and orderly",
+                "type": "triState",
+                "required": true,
+                "options": ["YES", "NO", "NA"]
+              },
+              {
+                "id": "gs_floors_aisles_exits_unobstructed",
+                "label": "Floors are clear and aisles, hallways, and exits are unobstructed",
+                "type": "triState",
+                "required": true,
+                "options": ["YES", "NO", "NA"]
+              },
+              {
+                "id": "gs_comments_date_corrected",
+                "label": "Comments / Date corrected",
+                "type": "textarea",
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ehs_audit_checklist_facility_safety",
+        "title": "EHS Audit Checklist (Facility / Lab Safety)",
+        "source": {
+          "name": "Wichita State University EHS",
+          "type": "PDF",
+          "evidence": "EHS Representative Inspection Checklist (Yes/No/N/A) with items including aisle width and egress"
+        },
+        "tags": ["inspection", "EHS", "safety", "audit"],
+        "complexityLevel": 2,
+        "sections": [
+          {
+            "id": "meta",
+            "title": "Inspection Details",
+            "fields": [
+              { "id": "inspector", "label": "Inspector", "type": "text", "required": true },
+              { "id": "location_lab_room", "label": "Lab / Room", "type": "text", "required": true },
+              { "id": "building", "label": "Building", "type": "text", "required": true },
+              { "id": "date", "label": "Date", "type": "date", "required": true }
+            ]
+          },
+          {
+            "id": "aisles_exits_egress",
+            "title": "Aisles / Exits / Egress",
+            "fields": [
+              {
+                "id": "egress_aisle_width_44in",
+                "label": "Minimum width of any aisle leading to an exit is at least 44 inches wide",
+                "type": "triState",
+                "required": true,
+                "options": ["YES", "NO", "NA"]
+              },
+              {
+                "id": "egress_exits_marked_accessible",
+                "label": "Exits are marked, free of debris and readily accessible at all times",
+                "type": "triState",
+                "required": true,
+                "options": ["YES", "NO", "NA"]
+              },
+              {
+                "id": "egress_emergency_lighting_operating",
+                "label": "Emergency lighting is operating (test if possible)",
+                "type": "triState",
+                "required": true,
+                "options": ["YES", "NO", "NA"]
+              },
+              {
+                "id": "egress_comments",
+                "label": "Comments",
+                "type": "textarea",
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "iso9001_internal_audit_simplified",
+        "title": "ISO 9001:2015 Internal Audit Checklist (Simplified)",
+        "source": {
+          "name": "ISO9001Help.co.uk",
+          "type": "PDF",
+          "evidence": "305-question internal audit checklist; includes columns for Conforms / Minor NC / Major NC / OFI with evidence & opportunities"
+        },
+        "tags": ["ISO9001", "internal-audit", "QMS"],
+        "complexityLevel": 3,
+        "sections": [
+          {
+            "id": "meta",
+            "title": "Audit Metadata",
+            "fields": [
+              { "id": "auditId", "label": "Audit ID", "type": "text", "required": true },
+              { "id": "auditDate", "label": "Audit date", "type": "date", "required": true },
+              { "id": "auditor", "label": "Auditor", "type": "text", "required": true },
+              { "id": "process_area", "label": "Process / Area audited", "type": "text", "required": true }
+            ]
+          },
+          {
+            "id": "clause_4_context",
+            "title": "Clause 4 — Context of the Organization (sample subset)",
+            "fields": [
+              {
+                "id": "q_4_1_1",
+                "label": "4.1 Q1: Determined external and internal issues affecting intended QMS results?",
+                "type": "auditFinding",
+                "required": true,
+                "findingOptions": ["CONFORMS", "MINOR_NC", "MAJOR_NC", "OFI"],
+                "evidence": { "required": true }
+              },
+              {
+                "id": "q_4_1_2",
+                "label": "4.1 Q2: Monitor and review information about external and internal issues?",
+                "type": "auditFinding",
+                "required": true,
+                "findingOptions": ["CONFORMS", "MINOR_NC", "MAJOR_NC", "OFI"],
+                "evidence": { "required": true }
+              },
+              {
+                "id": "q_4_2_3",
+                "label": "4.2 Q3: Determine interested parties relevant to the QMS?",
+                "type": "auditFinding",
+                "required": true,
+                "findingOptions": ["CONFORMS", "MINOR_NC", "MAJOR_NC", "OFI"],
+                "evidence": { "required": true }
+              },
+              {
+                "id": "opportunities_to_improve",
+                "label": "Opportunities to Improve (OFI notes)",
+                "type": "textarea",
+                "required": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "iso45001_audit_checklist_simplified",
+        "title": "ISO 45001:2018 Audit Checklist (Simplified)",
+        "source": {
+          "name": "ResearchGate (uploaded checklist PDF)",
+          "type": "PDF-in-HTML",
+          "evidence": "Checklist format includes Clause, Requirements, Reference in system, Yes/No, Area of concern, Additional notes"
+        },
+        "tags": ["ISO45001", "OHSMS", "internal-audit"],
+        "complexityLevel": 4,
+        "sections": [
+          {
+            "id": "meta",
+            "title": "Audit Metadata",
+            "fields": [
+              { "id": "company", "label": "Company", "type": "text", "required": true },
+              { "id": "department", "label": "Department", "type": "text", "required": false },
+              { "id": "completedBy", "label": "Completed by", "type": "text", "required": true },
+              { "id": "dateCompleted", "label": "Date completed", "type": "date", "required": true }
+            ]
+          },
+          {
+            "id": "clause_4_context",
+            "title": "Clause 4 — Context (sample subset)",
+            "fields": [
+              {
+                "id": "c4_1_issues_determined",
+                "label": "4.1: Determined external/internal issues affecting intended OH&S outcomes?",
+                "type": "yesNo",
+                "required": true,
+                "options": ["YES", "NO"]
+              },
+              {
+                "id": "c4_1_reference_in_system",
+                "label": "Reference in your system (document/procedure ID)",
+                "type": "text",
+                "required": false
+              },
+              {
+                "id": "c4_1_area_of_concern",
+                "label": "Area of concern?",
+                "type": "boolean",
+                "required": true
+              },
+              {
+                "id": "c4_1_additional_notes",
+                "label": "Additional Notes",
+                "type": "textarea",
+                "required": false
+              },
+              {
+                "id": "c4_2_interested_parties_determined",
+                "label": "4.2: Determined interested parties (in addition to workers) relevant to OH&S MS?",
+                "type": "yesNo",
+                "required": true,
+                "options": ["YES", "NO"]
+              },
+              {
+                "id": "c4_3_scope_documented",
+                "label": "4.3: Is the scope available as documented information?",
+                "type": "yesNo",
+                "required": true,
+                "options": ["YES", "NO"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rcca_root_cause_corrective_action",
+        "title": "Root Cause / Corrective Action (RCCA) Worksheet (Simplified)",
+        "source": {
+          "name": "Textron Systems",
+          "type": "PDF",
+          "evidence": "RCCA worksheet includes: Build Team, Define Problem, Containment Actions table, Fishbone categories, 3×5 Why, Corrective Actions table, Verification plan, Distribution & Recognition"
+        },
+        "tags": ["CAPA", "RCCA", "corrective-action", "quality"],
+        "complexityLevel": 5,
+        "sections": [
+          {
+            "id": "meta",
+            "title": "Initiation",
+            "fields": [
+              { "id": "dateIssued", "label": "Date issued", "type": "date", "required": true },
+              { "id": "lead", "label": "Lead", "type": "text", "required": true },
+              { "id": "teamMembers", "label": "Team Members", "type": "multiText", "required": false }
+            ]
+          },
+          {
+            "id": "problem_definition",
+            "title": "Define the Problem",
+            "fields": [
+              {
+                "id": "problemStatement",
+                "label": "Problem statement (concise definition of the issue/concern)",
+                "type": "textarea",
+                "required": true
+              }
+            ]
+          },
+          {
+            "id": "containment_actions",
+            "title": "Containment Actions (Immediate)",
+            "fields": [
+              {
+                "id": "containmentActions",
+                "label": "Containment action items (isolate/contain/screen/interim resolution)",
+                "type": "table",
+                "required": true,
+                "columns": [
+                  { "id": "actionItem", "label": "Action item", "type": "text", "required": true },
+                  { "id": "targetCompletionDate", "label": "Target completion date", "type": "date", "required": true },
+                  { "id": "responsiblePersons", "label": "Responsible person(s)", "type": "multiText", "required": true },
+                  { "id": "actualCompletionDate", "label": "Actual completion date", "type": "date", "required": false }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "fishbone_and_root_cause",
+            "title": "Identify Root Cause (Fishbone + 3×5 Why)",
+            "fields": [
+              {
+                "id": "fishbone",
+                "label": "Fishbone contributing factors",
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "material": { "type": "multiText", "label": "Material factors" },
+                  "machine": { "type": "multiText", "label": "Machine factors" },
+                  "measurement": { "type": "multiText", "label": "Measurement factors" },
+                  "method": { "type": "multiText", "label": "Method factors" },
+                  "people": { "type": "multiText", "label": "People factors" },
+                  "environment": { "type": "multiText", "label": "Environment factors" }
+                }
+              },
+              {
+                "id": "directCause",
+                "label": "Direct cause (immediate cause leading to the nonconformance)",
+                "type": "textarea",
+                "required": true
+              },
+              {
+                "id": "threeByFiveWhy",
+                "label": "3×5 Why (Direct / Detection / Systemic)",
+                "type": "object",
+                "required": true,
+                "properties": {
+                  "fishboneCauseSelected": { "type": "text", "label": "Fishbone cause being analyzed", "required": true },
+                  "directRootCause": { "type": "textarea", "label": "Direct root cause", "required": true },
+                  "detectionRootCause": { "type": "textarea", "label": "Detection root cause", "required": true },
+                  "systemicRootCause": { "type": "textarea", "label": "Systemic root cause", "required": true }
+                }
+              }
+            ]
+          },
+          {
+            "id": "corrective_actions",
+            "title": "Define Corrective Actions (Permanent)",
+            "fields": [
+              {
+                "id": "correctiveActions",
+                "label": "Corrective action items",
+                "type": "table",
+                "required": true,
+                "columns": [
+                  { "id": "actionItem", "label": "Action item", "type": "text", "required": true },
+                  { "id": "targetCompletionDate", "label": "Target completion date", "type": "date", "required": true },
+                  { "id": "responsiblePersons", "label": "Responsible person(s)", "type": "multiText", "required": true },
+                  { "id": "actualCompletionDate", "label": "Actual completion date", "type": "date", "required": false }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "verification_plan",
+            "title": "Corrective Action Verification Plan",
+            "fields": [
+              {
+                "id": "verificationPlan",
+                "label": "Verification plan (how each corrective action will be verified)",
+                "type": "table",
+                "required": true,
+                "columns": [
+                  { "id": "correctiveAction", "label": "Corrective action", "type": "text", "required": true },
+                  { "id": "verificationMethod", "label": "How will it be verified?", "type": "text", "required": true },
+                  { "id": "targetCompletionDate", "label": "Target completion date", "type": "date", "required": true },
+                  { "id": "responsiblePersons", "label": "Responsible person(s)", "type": "multiText", "required": true },
+                  { "id": "actualCompletionDate", "label": "Actual completion date", "type": "date", "required": false }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "distribution_recognition",
+            "title": "Distribution & Recognition",
+            "fields": [
+              { "id": "distributionList", "label": "Distribution list (who receives a copy)", "type": "multiText", "required": false },
+              { "id": "recognitionNotes", "label": "Recognition of team/individual efforts", "type": "textarea", "required": false }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
