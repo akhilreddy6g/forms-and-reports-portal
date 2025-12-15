@@ -47,7 +47,7 @@ export function FieldRenderer({
     return (
         <FieldShell label={field.label} required={field.required}>
         <RadioPills
-            value={(typeof value === "string" ? value : "") as "" | "Yes" | "NO"}
+            value={(typeof value === "string" ? value : "") as "" | "Yes" | "No"}
             options={field.options}
             onChangeAction={(v) => setAnswerAction(field.id, v)}
         />
@@ -58,7 +58,7 @@ export function FieldRenderer({
     return (
         <FieldShell label={field.label} required={field.required}>
         <RadioPills
-            value={(typeof value === "string" ? value : "") as "" | "Yes" | "NO" | "NA"}
+            value={(typeof value === "string" ? value : "") as "" | "Yes" | "No" | "NA"}
             options={field.options}
             onChangeAction={(v) => setAnswerAction(field.id, v)}
         />

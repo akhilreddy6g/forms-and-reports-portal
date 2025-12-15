@@ -17,10 +17,10 @@ export type TelField = FieldBase & { type: "tel" };
 export type DateField = FieldBase & { type: "date" };
 export type TextareaField = FieldBase & { type: "textarea" };
 
-export type YesNoField = FieldBase & { type: "yesNo"; options: ["Yes", "NO"] };
+export type YesNoField = FieldBase & { type: "yesNo"; options: ["Yes", "No"] };
 export type TriStateField = FieldBase & {
   type: "triState";
-  options: ["Yes", "NO", "NA"];
+  options: ["Yes", "No", "NA"];
 };
 export type BooleanField = FieldBase & { type: "boolean" };
 export type MultiTextField = FieldBase & { type: "multiText" };
