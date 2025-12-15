@@ -67,11 +67,13 @@ export function FieldRenderer({
 
     case "boolean":
       return (
-        <BooleanFieldView
-        value={Boolean(value)}
-        onChangeAction={(v) => setAnswerAction(field.id, v)}
-      />
-      );
+        <FieldShell label={field.label} required={field.required}>
+          <BooleanFieldView
+            value={Boolean(value)}
+            onChangeAction={(v) => setAnswerAction(field.id, v)}
+          />
+        </FieldShell>
+    );
 
     case "multiText":
       return (

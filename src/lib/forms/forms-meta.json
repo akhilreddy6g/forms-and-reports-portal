@@ -21,6 +21,16 @@
       }
     },
     {
+      "id": "rcca_root_cause_corrective_action",
+      "title": "Root Cause / Corrective Action (RCCA) Worksheet (Simplified)",
+      "description": "A detailed corrective action and root cause analysis worksheet used to investigate nonconformances and verify long-term corrective effectiveness.",
+      "complexityLevel": 5,
+      "image": {
+        "alt": "Fishbone diagram used for root cause analysis",
+        "src": "/images/root_cause_analysis.jpg"
+      }
+    },
+    {
       "id": "iso9001_internal_audit_simplified",
       "title": "ISO 9001:2015 Internal Audit Checklist (Simplified)",
       "description": "A structured internal audit checklist aligned with ISO 9001 requirements to assess quality management system processes and controls.",
@@ -38,16 +48,6 @@
       "image": {
         "alt": "ISO 45001 occupational health and safety framework diagram",
         "src": "/images/iso_45001.png"
-      }
-    },
-    {
-      "id": "rcca_root_cause_corrective_action",
-      "title": "Root Cause / Corrective Action (RCCA) Worksheet (Simplified)",
-      "description": "A detailed corrective action and root cause analysis worksheet used to investigate nonconformances and verify long-term corrective effectiveness.",
-      "complexityLevel": 5,
-      "image": {
-        "alt": "Fishbone diagram used for root cause analysis",
-        "src": "/images/root_cause_analysis.jpg"
       }
     }
   ]

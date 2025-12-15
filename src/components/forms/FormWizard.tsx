@@ -218,7 +218,6 @@ export function FormWizard({ form }: { form: FormSchema }) {
         <h1 className="text-2xl font-semibold tracking-tight text-app-text">
           {form.title}
         </h1>
-        <p className="text-sm text-app-muted">{form.source.evidence}</p>
       </div>
 
       <SectionTabs
