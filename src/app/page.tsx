@@ -1,8 +1,21 @@
-import { getFormsMeta } from "@/lib/forms/api";
+"use client";
+
+import useSWR from "swr";
+import type { FormsMetaResponse } from "@/lib/forms/types";
 import { FormsGrid } from "@/components/forms/FormsGrid";
 
-export default async function HomePage() {
-  const { forms } = await getFormsMeta();
+const fetcher = async (url: string): Promise<FormsMetaResponse> => {
+  const res = await fetch(url, { headers: { Accept: "application/json" } });
+  if (!res.ok) throw new Error(`Failed: ${res.status}`);
+  return res.json();
+};
+
+export default function HomePage() {
+  const { data, error, isLoading } = useSWR<FormsMetaResponse>(
+    "/api/forms-meta",
+    fetcher,
+    { revalidateOnFocus: false, revalidateOnReconnect: false }
+  );
 
   return (
     <main className="mx-auto flex max-w-6xl flex-col px-6 py-10">
@@ -15,7 +28,13 @@ export default async function HomePage() {
         </p>
       </div>
 
-      <FormsGrid forms={forms} />
+      {isLoading ? (
+        <p className="text-sm text-app-muted">Loading forms…</p>
+      ) : error ? (
+        <p className="text-sm text-app-muted">Failed to load forms.</p>
+      ) : (
+        <FormsGrid forms={data?.forms ?? []} />
+      )}
     </main>
   );
 }
