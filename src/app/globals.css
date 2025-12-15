@@ -12,6 +12,11 @@
   --c-text: #102A43;
   --c-text-muted: #52606D;
   --c-text-on-dark: #F5F7FA;
+
+  --c-btn-primary: #4055A8;   
+  --c-btn-secondary: #647ACB; 
+  --c-btn-edit: #2D3A8C;      
+  --c-btn-clear: #19216C;     
 }
 
 @theme {
@@ -26,4 +31,9 @@
   --color-app-text: var(--c-text);
   --color-app-muted: var(--c-text-muted);
   --color-app-textOnDark: var(--c-text-on-dark);
+
+  --color-brand-primaryBtn: var(--c-btn-primary);
+  --color-brand-secondaryBtn: var(--c-btn-secondary);
+  --color-brand-editBtn: var(--c-btn-edit);
+  --color-brand-clearBtn: var(--c-btn-clear);
 }

@@ -33,14 +33,14 @@
                 "label": "Workplace is clean and orderly",
                 "type": "triState",
                 "required": true,
-                "options": ["YES", "NO", "NA"]
+                "options": ["Yes", "No", "NA"]
               },
               {
                 "id": "gs_floors_aisles_exits_unobstructed",
                 "label": "Floors are clear and aisles, hallways, and exits are unobstructed",
                 "type": "triState",
                 "required": true,
-                "options": ["YES", "NO", "NA"]
+                "options": ["Yes", "No", "NA"]
               },
               {
                 "id": "gs_comments_date_corrected",
@@ -81,21 +81,21 @@
                 "label": "Minimum width of any aisle leading to an exit is at least 44 inches wide",
                 "type": "triState",
                 "required": true,
-                "options": ["YES", "NO", "NA"]
+                "options": ["Yes", "No", "NA"]
               },
               {
                 "id": "egress_exits_marked_accessible",
                 "label": "Exits are marked, free of debris and readily accessible at all times",
                 "type": "triState",
                 "required": true,
-                "options": ["YES", "NO", "NA"]
+                "options": ["Yes", "No", "NA"]
               },
               {
                 "id": "egress_emergency_lighting_operating",
                 "label": "Emergency lighting is operating (test if possible)",
                 "type": "triState",
                 "required": true,
-                "options": ["YES", "NO", "NA"]
+                "options": ["Yes", "No", "NA"]
               },
               {
                 "id": "egress_comments",
@@ -194,7 +194,7 @@
                 "label": "4.1: Determined external/internal issues affecting intended OH&S outcomes?",
                 "type": "yesNo",
                 "required": true,
-                "options": ["YES", "NO"]
+                "options": ["Yes", "No"]
               },
               {
                 "id": "c4_1_reference_in_system",
@@ -219,14 +219,14 @@
                 "label": "4.2: Determined interested parties (in addition to workers) relevant to OH&S MS?",
                 "type": "yesNo",
                 "required": true,
-                "options": ["YES", "NO"]
+                "options": ["Yes", "No"]
               },
               {
                 "id": "c4_3_scope_documented",
                 "label": "4.3: Is the scope available as documented information?",
                 "type": "yesNo",
                 "required": true,
-                "options": ["YES", "NO"]
+                "options": ["Yes", "No"]
               }
             ]
           }
