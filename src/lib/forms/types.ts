@@ -58,7 +58,6 @@ export type FormSection = {
 export type FormDefinition = {
   id: FormId;
   title: string;
-  tags: readonly string[];
   complexityLevel: 1 | 2 | 3 | 4 | 5;
   source: { name: string; type: string; evidence: string };
   sections: readonly FormSection[];
@@ -82,7 +81,6 @@ export type FormMeta = {
   id: string;
   title: string;
   description?: string;
-  tags: string[];
   complexityLevel: FormComplexity;
   image: {
     alt: string;

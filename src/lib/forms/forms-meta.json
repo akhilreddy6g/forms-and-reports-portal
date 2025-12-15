@@ -4,7 +4,6 @@
       "id": "workplace_safety_inspection_basic",
       "title": "Workplace Safety Inspection Checklist",
       "description": "A basic on-site inspection checklist used to identify common workplace hazards, housekeeping issues, and immediate safety concerns.",
-      "tags": ["inspection", "safety"],
       "complexityLevel": 1,
       "image": {
         "alt": "Workplace safety checklist clipboard",
@@ -15,7 +14,6 @@
       "id": "ehs_audit_checklist_facility_safety",
       "title": "EHS Audit Checklist (Facility / Lab Safety)",
       "description": "An environmental, health, and safety audit covering facility and laboratory conditions such as egress, signage, storage, and emergency readiness.",
-      "tags": ["inspection", "safety", "audit", "EHS"],
       "complexityLevel": 2,
       "image": {
         "alt": "Laboratory safety inspection in progress",
@@ -26,7 +24,6 @@
       "id": "iso9001_internal_audit_simplified",
       "title": "ISO 9001:2015 Internal Audit Checklist (Simplified)",
       "description": "A structured internal audit checklist aligned with ISO 9001 requirements to assess quality management system processes and controls.",
-      "tags": ["ISO9001", "internal-audit", "QMS"],
       "complexityLevel": 3,
       "image": {
         "alt": "ISO 9001 quality management certification symbol",
@@ -37,7 +34,6 @@
       "id": "iso45001_audit_checklist_simplified",
       "title": "ISO 45001:2018 Audit Checklist (Simplified)",
       "description": "An occupational health and safety management system audit checklist based on ISO 45001 clauses, focusing on hazards, risks, and worker safety.",
-      "tags": ["ISO45001", "internal-audit", "OHSMS"],
       "complexityLevel": 4,
       "image": {
         "alt": "ISO 45001 occupational health and safety framework diagram",
@@ -48,7 +44,6 @@
       "id": "rcca_root_cause_corrective_action",
       "title": "Root Cause / Corrective Action (RCCA) Worksheet (Simplified)",
       "description": "A detailed corrective action and root cause analysis worksheet used to investigate nonconformances and verify long-term corrective effectiveness.",
-      "tags": ["CAPA", "RCCA", "corrective-action", "quality"],
       "complexityLevel": 5,
       "image": {
         "alt": "Fishbone diagram used for root cause analysis",

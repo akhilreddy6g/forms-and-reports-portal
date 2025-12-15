@@ -9,7 +9,6 @@
           "type": "PDF",
           "evidence": "Workplace Safety Inspection Checklist (tri-state Yes/No/N/A with comments/date corrected)"
         },
-        "tags": ["inspection", "safety"],
         "complexityLevel": 1,
         "sections": [
           {
@@ -61,7 +60,6 @@
           "type": "PDF",
           "evidence": "EHS Representative Inspection Checklist (Yes/No/N/A) with items including aisle width and egress"
         },
-        "tags": ["inspection", "EHS", "safety", "audit"],
         "complexityLevel": 2,
         "sections": [
           {
@@ -117,7 +115,6 @@
           "type": "PDF",
           "evidence": "305-question internal audit checklist; includes columns for Conforms / Minor NC / Major NC / OFI with evidence & opportunities"
         },
-        "tags": ["ISO9001", "internal-audit", "QMS"],
         "complexityLevel": 3,
         "sections": [
           {
@@ -176,7 +173,6 @@
           "type": "PDF-in-HTML",
           "evidence": "Checklist format includes Clause, Requirements, Reference in system, Yes/No, Area of concern, Additional notes"
         },
-        "tags": ["ISO45001", "OHSMS", "internal-audit"],
         "complexityLevel": 4,
         "sections": [
           {
@@ -244,7 +240,6 @@
           "type": "PDF",
           "evidence": "RCCA worksheet includes: Build Team, Define Problem, Containment Actions table, Fishbone categories, 3×5 Why, Corrective Actions table, Verification plan, Distribution & Recognition"
         },
-        "tags": ["CAPA", "RCCA", "corrective-action", "quality"],
         "complexityLevel": 5,
         "sections": [
           {

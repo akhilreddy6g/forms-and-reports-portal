@@ -30,16 +30,6 @@ export function FormCard({ form }: { form: FormMeta }) {
             </p>
           ) : null}
 
-          <div className="mt-1 flex flex-wrap gap-2">
-            {form.tags.slice(0, 3).map((t) => (
-              <span
-                key={t}
-                className="rounded-full border border-app-border bg-app-surface/60 px-2.5 py-1 text-xs text-app-muted"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="mt-4 flex items-center justify-between gap-3">
