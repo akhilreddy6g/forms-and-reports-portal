@@ -1,26 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --c-header-bg: #19216C;
+  --c-page-bg: #F5F7FA;
+  --c-card-footer-bg: #E0E8F9;
+  --c-primary-btn-bg: #4055A8;
+
+  --c-surface: #FFFFFF;
+  --c-border: #D9E2EC;
+
+  --c-text: #102A43;
+  --c-text-muted: #52606D;
+  --c-text-on-dark: #F5F7FA;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  --color-brand-header: var(--c-header-bg);
+  --color-brand-primaryBtn: var(--c-primary-btn-bg);
+  --color-brand-cardFooter: var(--c-card-footer-bg);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  --color-app-bg: var(--c-page-bg);
+  --color-app-surface: var(--c-surface);
+  --color-app-border: var(--c-border);
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-app-text: var(--c-text);
+  --color-app-muted: var(--c-text-muted);
+  --color-app-textOnDark: var(--c-text-on-dark);
 }

@@ -75,3 +75,21 @@ export type FormResponse = {
   submittedAt: string; // ISO string
   answers: Record<string, unknown>; // keyed by field.id
 };
+
+export type FormComplexity = 1 | 2 | 3 | 4 | 5;
+
+export type FormMeta = {
+  id: string;
+  title: string;
+  description?: string;
+  tags: string[];
+  complexityLevel: FormComplexity;
+  image: {
+    alt: string;
+    src: string; // public/ path or remote URL
+  };
+};
+
+export type FormsMetaResponse = {
+  forms: FormMeta[];
+};
